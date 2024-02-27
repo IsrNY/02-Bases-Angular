@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -6,28 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public mensaje:string = 'What´s Up';
-
-  public counter:number = 10;
-
-  sumar():void {
-
-    if(this.counter < 20){
-      this.counter += 1;
-    } else {
-      alert('Contador excedido, decrementar')
-    }
-  }
-  restar():void{
-    if(this.counter > 0)
-    {
-    this.counter -= 1;
-    }
-  else {
-    alert('Contador llegó a 0, incrementar')
-  }
-}
-  reset():void{
-    this.counter = 10;
-  }
+  public mensaje:string = "What's Up";
 }
