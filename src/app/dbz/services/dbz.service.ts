@@ -27,7 +27,7 @@ export class DbzService {
       power:5000
     },
     {
-      id: uuid(),
+      id:uuid(),
       name:'Broly',
       power:50000
     }
