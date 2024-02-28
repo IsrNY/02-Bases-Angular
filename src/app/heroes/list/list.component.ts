@@ -15,5 +15,6 @@ export class ListComponent {
 
   restoreHeroes():void {
     this.heroNames = ['Spiterman','ChairoMan','Julk','Thortilla','negroPanter'];
+    this.deletedHero = '';
   }
 }
