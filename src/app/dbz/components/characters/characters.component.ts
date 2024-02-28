@@ -18,6 +18,7 @@ export class CharactersComponent {
   }
 
   emitCharacter():void {
+    // console.log(this.character)
     if(this.character.name.length === 0 || this.character.power < 0){
       Swal.fire({
         title:'Error',
