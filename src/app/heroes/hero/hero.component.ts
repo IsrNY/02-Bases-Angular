@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
-  public heroName: string = 'Iron Man';
-  public name:string = 'Tony Stark';
+  public name:string = 'Iron Man';
   public age:number = 45;
 
   get capitalizedName():string {
@@ -15,15 +14,19 @@ export class HeroComponent {
   }
 
   getHeroDescription():string {
-    return `${this.name} - ${this.age}`
+    return `${this.name} - ${this.age}`;
   }
 
   changeAge():void {
-    this.age = 55;
+    this.age = 25;
   }
 
   changeName():void {
-    this.name = 'Antonio';
-    this.heroName = 'El hombre fierros'
+    this.name = 'Spider Man';
+  }
+
+  reset():void {
+    this.name = 'Iron Man';
+    this.age = 45;
   }
 }
