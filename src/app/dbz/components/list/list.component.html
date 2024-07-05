@@ -1,0 +1,16 @@
+<h4>Listado personajes</h4>
+<ul class="list-group">
+  <li class="list-group-item"
+  *ngFor="let character of characterList;
+  let i = index;
+  let isFirst = first;
+  let isLast = last;
+  let isOdd = odd;
+  let isEven = even"
+  [ngClass]="{ 'list-group-item-success':isFirst,
+               'list-group-item-secondary':isOdd,
+               'list-group-item-danger':isLast }"> 
+    <span class="text-primary">{{i+1}}. </span> <span>{{ character.name}}</span> - <strong>Power:</strong> {{character.power}}
+    <button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
+  </li>
+</ul>
